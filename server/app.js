@@ -31,7 +31,7 @@ app.use('/', express.static('dist'));
 //     target: 'http://192.168.253.2:8080',
 //     changeOrigin: true
 // }));
-app.use('/api', proxy('http://192.168.253.2:8080'));
+app.use('/api', proxy('http://192.168.253.2:8080/tianyujia'));
 // 监听端口
 app.listen(8081, () => {
   console.log('ssssss');
