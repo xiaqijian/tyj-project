@@ -12,7 +12,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in items">
+        <tr v-for="item in items" :key="item">
           <td>{{item.uid}}</td>
           <td @click="updateUser(item.uid, item.uname)">{{item.uname}}</td>
           <td @click="updateSub (item.sid, item.sname) ">{{item.sname}}</td>

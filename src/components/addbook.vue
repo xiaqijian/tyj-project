@@ -6,7 +6,7 @@
   </el-form-item>
   <el-form-item label="选择学科">
     <el-select v-model="form.region" placeholder="选择学科">
-      <el-option v-for="item in uid" :label="item.sname" :value="item.sid"></el-option>
+      <el-option v-for="item in uid" :key="item" :label="item.sname" :value="item.sid"></el-option>
     </el-select>
   </el-form-item>
   <el-form-item>
