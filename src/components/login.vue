@@ -70,7 +70,7 @@ export default {
         }
         that.$axios({
             method: 'post',
-            url: 'api/tianyujiat/entry!login.action',
+            url: 'api/entry!login.action',
             data: qs.stringify({
                 'user.uname':name,
                'user.upassword':password

@@ -41,7 +41,7 @@ export default {
   },
   mounted () {
     let that = this;
-    that.$axios.get('api/tianyujiat/entry!queryAll.action')
+    that.$axios.get('api/entry!queryAll.action')
      .then((res) => {
        that.items = res.data;
        console.log(res.data)
@@ -50,7 +50,7 @@ export default {
   methods: {
     updata () {
       let that = this;
-      that.$axios.get('api/tianyujiat/entry!queryAll.action')
+      that.$axios.get('api/entry!queryAll.action')
       .then((res) => {
         that.items = res.data;
         console.log(res.data)
@@ -62,7 +62,7 @@ export default {
           confirmButtonText: '确定',
           cancelButtonText: '取消'
         }).then(({ value }) => {
-          that.$axios.post('api/tianyujiat/sub!updateSub.action', qs.stringify({
+          that.$axios.post('api/sub!updateSub.action', qs.stringify({
                 // 'subject.sid': uid
                 "subject.sid": id,
                 "subject.sname": value
@@ -96,7 +96,7 @@ export default {
           confirmButtonText: '确定',
           cancelButtonText: '取消'
         }).then(({ value }) => {
-          that.$axios.post('api/tianyujiat/entry!updateUser.action', qs.stringify({
+          that.$axios.post('api/entry!updateUser.action', qs.stringify({
                 // 'subject.sid': uid
                 "user.uid": id,
                 "user.upassword": value

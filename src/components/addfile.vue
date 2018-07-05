@@ -3,7 +3,7 @@
       <el-upload
   class="upload-demo"
   ref="upload"
-  action="api/tianyujiat/ExcelAction!importExcel.action"
+  action="api/ExcelAction!importExcel.action"
   :on-preview="handlePreview"
   :on-remove="handleRemove"
   :file-list="fileList"

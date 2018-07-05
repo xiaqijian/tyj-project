@@ -38,7 +38,7 @@ export default {
   },
   mounted () {
     let that = this;
-    this.$axios.get('api/tianyujiat/sub!query.action')
+    this.$axios.get('api/sub!query.action')
         .then((res) => {
             console.log(res.data)
             console.log(typeof res.data)

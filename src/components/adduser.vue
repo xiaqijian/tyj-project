@@ -43,7 +43,7 @@ export default {
         userdata["user.upassword"]=adddata.password;
         that.$axios({
             method: 'post',
-            url: 'api/tianyujiat/entry!addUser.action',
+            url: 'api/entry!addUser.action',
             data: qs.stringify(userdata),
              headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
