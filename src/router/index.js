@@ -6,6 +6,7 @@ import addsub from '@/components/addsub'
 import adduser from '@/components/adduser'
 import addbook from '@/components/addbook'
 import file from '@/components/addfile'
+import filelist from '@/components/filelist'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/file',
       name: 'file',
       component: file
+    },
+    {
+      path: '/filelist',
+      name: 'filelist',
+      component: filelist
     }
   ]
 })

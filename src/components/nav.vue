@@ -13,6 +13,7 @@
   <el-menu-item index="addsub">添加课程</el-menu-item>
   <el-menu-item index="addbook">添加书</el-menu-item>
   <el-menu-item index="file">文件</el-menu-item>
+  <el-menu-item index="filelist">文件列表</el-menu-item>
   <el-menu-item index="login" @click="loginout">退出</el-menu-item>
 </el-menu>
 </div>
